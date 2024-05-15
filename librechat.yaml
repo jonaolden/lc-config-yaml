@@ -21,7 +21,7 @@ endpoints:
 
     # Anyscale
     - name: "Anyscale"
-      apiKey: "${ANYSCALE_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
@@ -37,7 +37,7 @@ endpoints:
 
     # APIpie
     - name: "APIpie"
-      apiKey: "${APIPIE_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://apipie.ai/v1/"
       models:
         default: [
@@ -64,7 +64,7 @@ endpoints:
 
     #cohere
     - name: "cohere"
-      apiKey: "${COHERE_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
@@ -75,7 +75,7 @@ endpoints:
 
     # Fireworks
     - name: "Fireworks"
-      apiKey: "${FIREWORKS_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default: [
@@ -92,7 +92,7 @@ endpoints:
   
     # groq
     - name: "groq"
-      apiKey: "${GROQ_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
@@ -109,7 +109,7 @@ endpoints:
 
     # Mistral AI API
     - name: "Mistral"
-      apiKey: "${MISTRAL_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.mistral.ai/v1"
       models:
         default: [
@@ -126,7 +126,7 @@ endpoints:
 
     # OpenRouter.ai
     - name: "OpenRouter"
-      apiKey: "${OPENROUTER_KEY}"
+      apiKey: user_provided
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default: ["openai/gpt-3.5-turbo"]
@@ -140,7 +140,7 @@ endpoints:
 
     # Perplexity
     - name: "Perplexity"
-      apiKey: "${PERPLEXITY_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.perplexity.ai/"
       models:
         default: [
@@ -161,7 +161,7 @@ endpoints:
 
     # ShuttleAI API
     - name: "ShuttleAI"
-      apiKey: "${SHUTTLEAI_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.shuttleai.app/v1"
       models:
         default: [
@@ -178,7 +178,7 @@ endpoints:
 
     # together.ai
     - name: "together.ai"
-      apiKey: "${TOGETHERAI_API_KEY}"
+      apiKey: user_provided
       baseURL: "https://api.together.xyz"
       models:
         default: [
@@ -234,4 +234,3 @@ endpoints:
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-     
