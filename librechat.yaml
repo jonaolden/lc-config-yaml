@@ -69,14 +69,27 @@ endpoints:
           "mistral-tiny-latest",
           "mistral-small-latest",
           "mistral-medium-latest",
-          "mistral-large-latest",
-          "codestral-latest"
+          "mistral-large-latest"
           ]
         fetch: true
       titleConvo: true
       titleModel: "mistral-tiny"
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+
+    # Mistral AI API
+    - name: "Codestral"
+      apiKey: "$codestral_api_key"
+      baseURL: "https://codestral.mistral.ai/v1/chat/completions"
+      models:
+        default: ["codestral-latest"]
+        fetch: false
+      titleConvo: true
+      titleModel: "codestral-latest"
+      modelDisplayLabel: "Mistral"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+
+      
 
     # OpenRouter.ai
     - name: "OpenRouter"
