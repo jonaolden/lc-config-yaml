@@ -21,7 +21,7 @@ endpoints:
 
     #cohere
     - name: "cohere"
-      apiKey: "user_provided"
+      apiKey: "$cohere_api_key"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
@@ -33,7 +33,7 @@ endpoints:
 
     #cohere_web
     - name: "cohere_web"
-      apiKey: "user_provided"
+      apiKey: $cohere_api_key
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r-plus"]
@@ -46,7 +46,7 @@ endpoints:
 
     # groq
     - name: "groq"
-      apiKey: "user_provided"
+      apiKey: "$groq_api_key"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
@@ -62,7 +62,7 @@ endpoints:
 
     # Mistral AI API
     - name: "Mistral"
-      apiKey: "user_provided"
+      apiKey: "$mistral_api_key"
       baseURL: "https://api.mistral.ai/v1"
       models:
         default: [
@@ -80,7 +80,7 @@ endpoints:
 
     # OpenRouter.ai
     - name: "OpenRouter"
-      apiKey: "user_provided"
+      apiKey: "$openrouter_api_key"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default: ["openai/gpt-3.5-turbo"]
@@ -91,24 +91,3 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
-
-    # Perplexity
-    - name: "Perplexity"
-      apiKey: "user_provided"
-      baseURL: "https://api.perplexity.ai/"
-      models:
-        default: [
-          "mistral-7b-instruct",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "sonar-medium-chat",
-          "sonar-medium-online"
-          ]
-        fetch: false # fetching list of models is not supported
-      titleConvo: true
-      titleModel: "sonar-medium-chat"
-      summarize: false
-      summaryModel: "sonar-medium-chat"
-      forcePrompt: false
-      dropParams: ["stop", "frequency_penalty"]
-      modelDisplayLabel: "Perplexity"
