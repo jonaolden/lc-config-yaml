@@ -21,7 +21,7 @@ endpoints:
 
     #cohere
     - name: "cohere"
-      apiKey: "$cohere_api_key"
+      apiKey: "${COHERE_KEY}"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
@@ -33,7 +33,7 @@ endpoints:
 
     #cohere_web
     - name: "cohere_web"
-      apiKey: $cohere_api_key
+      apiKey: "${COHERE_KEY}"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r-plus"]
@@ -46,7 +46,7 @@ endpoints:
 
     # groq
     - name: "groq"
-      apiKey: "$groq_api_key"
+      apiKey: "${GROQ_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
@@ -62,7 +62,7 @@ endpoints:
 
     # Mistral AI API
     - name: "Mistral"
-      apiKey: "$mistral_api_key"
+      apiKey: "${MISTRAL_KEY}"
       baseURL: "https://api.mistral.ai/v1"
       models:
         default: [
@@ -79,7 +79,7 @@ endpoints:
 
     # Mistral AI API
     - name: "Codestral"
-      apiKey: "$codestral_api_key"
+      apiKey: "${CODESTRAL_KEY}"
       baseURL: "https://codestral.mistral.ai/v1/chat/completions"
       models:
         default: ["codestral-latest"]
@@ -93,7 +93,7 @@ endpoints:
 
     # OpenRouter.ai
     - name: "OpenRouter"
-      apiKey: "$openrouter_api_key"
+      apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default: ["openai/gpt-3.5-turbo"]
