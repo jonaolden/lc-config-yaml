@@ -40,7 +40,7 @@ endpoints:
         fetch: false
       modelDisplayLabel: "cohere"
       addParams:
-        connectors: [{"id":"web-search"}]
+        connectors: [{"id": "web-search"}]
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
@@ -50,7 +50,6 @@ endpoints:
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
-          "llama2-70b-4096",
           "llama3-70b-8192",
           "llama3-8b-8192",
           "mixtral-8x7b-32768",
@@ -67,10 +66,11 @@ endpoints:
       baseURL: "https://api.mistral.ai/v1"
       models:
         default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-large-latest"
+          "mistral-tiny-latest",
+          "mistral-small-latest",
+          "mistral-medium-latest",
+          "mistral-large-latest",
+          "codestral-latest"
           ]
         fetch: true
       titleConvo: true
