@@ -40,7 +40,7 @@ endpoints:
         fetch: false
       modelDisplayLabel: "cohere"
       addParams:
-         connectors=[{"id": "web-search"}])
+          connectors=[{"id": "web-search"}]
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
