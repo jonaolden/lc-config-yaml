@@ -30,20 +30,6 @@ endpoints:
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
-
-    #cohere_web
-    - name: "cohere_web"
-      apiKey: "${COHERE_KEY}"
-      baseURL: "https://api.cohere.ai/v1"
-      models:
-        default: ["command-r-plus"]
-        fetch: false
-      modelDisplayLabel: "cohere"
-      addParams:
-          connectors=[{"id": "web-search"}]
-      titleModel: "command"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
-
     # groq
     - name: "groq"
       apiKey: "${GROQ_KEY}"
