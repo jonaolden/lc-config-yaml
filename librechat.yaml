@@ -55,7 +55,7 @@ endpoints:
     # github
     - name: "github"
       apiKey: "${GITHUB_MODELS_KEY}"
-      baseURL: "https://models.inference.ai.azure.com"
+      baseURL: "https://models.inference.ai.azure.com/chat/completions"
       models:
         default: [
           "gpt-4o",
