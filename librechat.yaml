@@ -18,7 +18,6 @@ registration:
 
 endpoints:
   custom:
-
     #cohere
     - name: "cohere"
       apiKey: "${COHERE_KEY}"
@@ -51,6 +50,21 @@ endpoints:
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
+
+
+    # github
+    - name: "github"
+      apiKey: "${GITHUB_MODELS_KEY}"
+      baseURL: "https://models.inference.ai.azure.com"
+      models:
+        default: [
+          "gpt-4o",
+          "gpt-4o-mini"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-4o-mini"
+      modelDisplayLabel: "github"
 
     # Mistral AI API
     - name: "Mistral"
